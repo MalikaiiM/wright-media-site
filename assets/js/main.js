@@ -75,13 +75,30 @@
   }, { threshold: 0.12 });
   reveals.forEach(el => io.observe(el));
 
-  /* ---------- contact form (prototype: no backend) ---------- */
+  /* ---------- contact form → Formspree ---------- */
   const form = document.getElementById('contactForm');
-  if (form) form.addEventListener('submit', (e) => {
+  if (form) form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const status = document.getElementById('contactStatus');
     if (!form.checkValidity()) { status.textContent = 'Please complete the required fields.'; return; }
-    status.textContent = 'Thank you — we’ll be in touch shortly. Have a blessed day.';
-    form.reset();
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    status.textContent = 'Sending…';
+    try {
+      const res = await fetch('https://formspree.io/f/mnpavgjy', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        status.textContent = 'Thank you — we’ll be in touch shortly. Have a blessed day.';
+        form.reset();
+      } else {
+        status.textContent = 'Something went wrong — please email W@wrightmediaofficial.com directly.';
+      }
+    } catch (err) {
+      status.textContent = 'Something went wrong — please email W@wrightmediaofficial.com directly.';
+    }
+    btn.disabled = false;
   });
 })();
