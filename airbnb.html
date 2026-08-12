@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/styles.css" />
-<link rel="stylesheet" href="assets/css/gallery.css" />
+<link rel="stylesheet" href="assets/css/styles.css?v=3" />
+<link rel="stylesheet" href="assets/css/gallery.css?v=3" />
 <link rel="icon" href="assets/img/logo.png" />
 </head>
 <body class="gallery-page">
@@ -47,112 +47,743 @@
 </div>
 
 <section class="gallery-hero">
-  <p class="overline">Portfolio</p>
+  <p class="overline">Catalog</p>
   <h1>Airbnb</h1>
   <p class="gallery-hero__sub">Scroll-stopping photography and video that lift bookings and set your rental apart &mdash; in Florida and beyond.</p>
 </section>
 
 <section class="carousel-section">
-  <div class="carousel" id="pvCarousel" data-images="assets/img/airbnb/kentucky/kentucky1.jpg,assets/img/airbnb/pierson/pierson1.jpg,assets/img/airbnb/fayette/fayette1.jpg,assets/img/airbnb/canal/canal1.jpg,assets/img/airbnb/albany/albany1.jpg,assets/img/airbnb/angelfire/angelfire1.jpg,assets/img/airbnb/missouri/missouri1.jpg">
+  <h2 class="gallery-subhead">West Palm Beach, Florida</h2>
+  <div class="carousel" id="pv-kentucky" data-images="assets/img/airbnb/kentucky/kentucky1.jpg,assets/img/airbnb/kentucky/kentucky2.jpg,assets/img/airbnb/kentucky/kentucky3.jpg,assets/img/airbnb/kentucky/kentucky4.jpg,assets/img/airbnb/kentucky/kentucky5.jpg,assets/img/airbnb/kentucky/kentucky6.jpg,assets/img/airbnb/kentucky/kentucky7.jpg,assets/img/airbnb/kentucky/kentucky8.jpg">
     <div class="carousel__track"></div>
     <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
     <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
     <div class="carousel__dots"></div>
   </div>
   <div class="carousel-cta">
-    <button class="btn btn--outline" id="viewFullBtn" type="button">View Full Gallery</button>
+    <button class="btn btn--outline js-gal" type="button" data-target="#gal-kentucky" data-open="View Gallery">View Gallery</button>
+  </div>
+  <div class="gal-wrap is-hidden" id="gal-kentucky">
+    <div class="gallery__grid">
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f1.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f1.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f2.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f2.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f3.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f3.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f4.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f4.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f5.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f5.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f6.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f6.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f7.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f7.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f8.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f8.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f9.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f9.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f10.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f10.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f11.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f11.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f12.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f12.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f13.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f13.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f14.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f14.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f15.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f15.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f16.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f16.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f17.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f17.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f18.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f18.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f19.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f19.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f20.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f20.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f21.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f21.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f22.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f22.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f23.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f23.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f24.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f24.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f25.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f25.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f26.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f26.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f27.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f27.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f28.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f28.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f29.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f29.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f30.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f30.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f31.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f31.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f32.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f32.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f33.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f33.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f34.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f34.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f35.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f35.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f36.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f36.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f37.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f37.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f38.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f38.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f39.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f39.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f40.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f40.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f41.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f41.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f42.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f42.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f43.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f43.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f44.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f44.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f45.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f45.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f46.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f46.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f47.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f47.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f48.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f48.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f49.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f49.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f50.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f50.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/kentucky-full/f51.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky-full/f51.jpg" alt="Wright Media Airbnb photography" /></a>
+    </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#gal-kentucky" data-back="#pv-kentucky">Minimize Gallery</button></div>
   </div>
 </section>
 
-<main class="gallery is-hidden" id="fullGallery">
-  <h2 class="gallery-subhead">2299 Kentucky St</h2>
-  <div class="gallery__grid">
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky1.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky1.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky2.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky2.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky3.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky3.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky4.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky4.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky5.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky5.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky6.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky6.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky7.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky7.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/kentucky/kentucky8.jpg"><img loading="lazy" src="assets/img/airbnb/kentucky/kentucky8.jpg" alt="Wright Media Airbnb photography" /></a>
+<section class="carousel-section">
+  <h2 class="gallery-subhead">Delray Beach, Florida</h2>
+  <div class="carousel" id="pv-pierson" data-images="assets/img/airbnb/pierson/pierson1.jpg,assets/img/airbnb/pierson/pierson2.jpg,assets/img/airbnb/pierson/pierson3.jpg,assets/img/airbnb/pierson/pierson4.jpg,assets/img/airbnb/pierson/pierson5.jpg,assets/img/airbnb/pierson/pierson6.jpg,assets/img/airbnb/pierson/pierson7.jpg,assets/img/airbnb/pierson/pierson8.jpg,assets/img/airbnb/pierson/pierson9.jpg">
+    <div class="carousel__track"></div>
+    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
+    <div class="carousel__dots"></div>
   </div>
-  <h2 class="gallery-subhead">3122 Pierson Dr</h2>
-  <div class="gallery__grid">
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson1.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson1.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson2.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson2.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson3.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson3.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson4.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson4.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson5.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson5.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson6.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson6.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson7.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson7.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson8.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson8.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/pierson/pierson9.jpg"><img loading="lazy" src="assets/img/airbnb/pierson/pierson9.jpg" alt="Wright Media Airbnb photography" /></a>
+  <div class="carousel-cta">
+    <button class="btn btn--outline js-gal" type="button" data-target="#gal-pierson" data-open="View Gallery">View Gallery</button>
   </div>
-  <h2 class="gallery-subhead">7 Fayette Dr</h2>
-  <div class="gallery__grid">
-      <a class="gtile" href="assets/img/airbnb/fayette/fayette1.jpg"><img loading="lazy" src="assets/img/airbnb/fayette/fayette1.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/fayette/fayette2.jpg"><img loading="lazy" src="assets/img/airbnb/fayette/fayette2.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/fayette/fayette3.jpg"><img loading="lazy" src="assets/img/airbnb/fayette/fayette3.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/fayette/fayette4.jpg"><img loading="lazy" src="assets/img/airbnb/fayette/fayette4.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/fayette/fayette5.jpg"><img loading="lazy" src="assets/img/airbnb/fayette/fayette5.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/fayette/fayette6.jpg"><img loading="lazy" src="assets/img/airbnb/fayette/fayette6.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/fayette/fayette7.jpg"><img loading="lazy" src="assets/img/airbnb/fayette/fayette7.jpg" alt="Wright Media Airbnb photography" /></a>
+  <div class="gal-wrap is-hidden" id="gal-pierson">
+    <div class="gallery__grid">
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f1.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f1.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f2.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f2.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f3.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f3.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f4.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f4.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f5.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f5.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f6.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f6.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f7.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f7.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f8.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f8.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f9.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f9.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f10.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f10.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f11.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f11.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f12.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f12.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f13.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f13.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f14.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f14.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f15.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f15.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f16.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f16.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f17.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f17.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f18.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f18.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f19.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f19.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f20.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f20.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f21.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f21.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f22.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f22.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f23.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f23.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f24.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f24.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f25.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f25.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f26.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f26.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f27.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f27.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f28.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f28.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f29.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f29.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f30.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f30.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f31.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f31.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f32.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f32.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f33.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f33.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f34.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f34.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f35.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f35.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f36.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f36.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f37.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f37.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f38.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f38.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f39.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f39.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f40.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f40.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f41.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f41.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f42.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f42.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f43.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f43.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f44.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f44.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f45.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f45.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f46.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f46.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f47.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f47.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f48.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f48.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f49.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f49.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f50.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f50.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f51.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f51.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f52.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f52.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f53.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f53.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f54.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f54.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f55.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f55.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f56.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f56.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f57.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f57.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f58.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f58.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f59.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f59.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f60.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f60.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f61.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f61.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f62.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f62.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f63.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f63.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/pierson-full/f64.jpg"><img loading="lazy" src="assets/img/airbnb/pierson-full/f64.jpg" alt="Wright Media Airbnb photography" /></a>
+    </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#gal-pierson" data-back="#pv-pierson">Minimize Gallery</button></div>
   </div>
-  <h2 class="gallery-subhead">825 Canal Dr</h2>
-  <div class="gallery__grid">
-      <a class="gtile" href="assets/img/airbnb/canal/canal1.jpg"><img loading="lazy" src="assets/img/airbnb/canal/canal1.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/canal/canal2.jpg"><img loading="lazy" src="assets/img/airbnb/canal/canal2.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/canal/canal3.jpg"><img loading="lazy" src="assets/img/airbnb/canal/canal3.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/canal/canal4.jpg"><img loading="lazy" src="assets/img/airbnb/canal/canal4.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/canal/canal5.jpg"><img loading="lazy" src="assets/img/airbnb/canal/canal5.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/canal/canal6.jpg"><img loading="lazy" src="assets/img/airbnb/canal/canal6.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/canal/canal7.jpg"><img loading="lazy" src="assets/img/airbnb/canal/canal7.jpg" alt="Wright Media Airbnb photography" /></a>
+</section>
+
+<section class="carousel-section">
+  <h2 class="gallery-subhead">Boynton Beach, Florida</h2>
+  <div class="carousel" id="pv-fayette" data-images="assets/img/airbnb/fayette/fayette1.jpg,assets/img/airbnb/fayette/fayette2.jpg,assets/img/airbnb/fayette/fayette3.jpg,assets/img/airbnb/fayette/fayette4.jpg,assets/img/airbnb/fayette/fayette5.jpg,assets/img/airbnb/fayette/fayette6.jpg,assets/img/airbnb/fayette/fayette7.jpg">
+    <div class="carousel__track"></div>
+    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
+    <div class="carousel__dots"></div>
   </div>
-  <h2 class="gallery-subhead">166 Billingswood Pl &middot; Albany, NY</h2>
-  <div class="gallery__grid">
-      <a class="gtile" href="assets/img/airbnb/albany/albany1.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany1.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany2.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany2.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany3.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany3.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany4.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany4.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany5.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany5.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany6.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany6.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany7.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany7.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany8.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany8.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany9.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany9.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany10.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany10.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/albany/albany11.jpg"><img loading="lazy" src="assets/img/airbnb/albany/albany11.jpg" alt="Wright Media Airbnb photography" /></a>
+  <div class="carousel-cta">
+    <button class="btn btn--outline js-gal" type="button" data-target="#gal-fayette" data-open="View Gallery">View Gallery</button>
   </div>
-  <h2 class="gallery-subhead">30 Alta Rd &middot; Angel Fire, NM</h2>
-  <div class="gallery__grid">
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire1.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire1.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire2.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire2.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire3.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire3.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire4.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire4.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire5.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire5.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire6.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire6.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire7.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire7.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire8.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire8.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire9.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire9.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire10.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire10.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/angelfire/angelfire11.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire/angelfire11.jpg" alt="Wright Media Airbnb photography" /></a>
+  <div class="gal-wrap is-hidden" id="gal-fayette">
+    <div class="gallery__grid">
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f1.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f1.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f2.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f2.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f3.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f3.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f4.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f4.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f5.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f5.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f6.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f6.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f7.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f7.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f8.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f8.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f9.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f9.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f10.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f10.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f11.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f11.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f12.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f12.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f13.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f13.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f14.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f14.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f15.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f15.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f16.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f16.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f17.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f17.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f18.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f18.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f19.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f19.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f20.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f20.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f21.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f21.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f22.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f22.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f23.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f23.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f24.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f24.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f25.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f25.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f26.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f26.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f27.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f27.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f28.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f28.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f29.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f29.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f30.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f30.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f31.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f31.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f32.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f32.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f33.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f33.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f34.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f34.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f35.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f35.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f36.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f36.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f37.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f37.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f38.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f38.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/fayette-full/f39.jpg"><img loading="lazy" src="assets/img/airbnb/fayette-full/f39.jpg" alt="Wright Media Airbnb photography" /></a>
+    </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#gal-fayette" data-back="#pv-fayette">Minimize Gallery</button></div>
   </div>
-  <h2 class="gallery-subhead">566 Sunset Rd &middot; Missouri</h2>
-  <div class="gallery__grid">
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri1.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri1.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri2.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri2.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri3.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri3.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri4.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri4.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri5.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri5.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri6.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri6.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri7.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri7.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri8.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri8.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri9.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri9.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri10.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri10.jpg" alt="Wright Media Airbnb photography" /></a>
-      <a class="gtile" href="assets/img/airbnb/missouri/missouri11.jpg"><img loading="lazy" src="assets/img/airbnb/missouri/missouri11.jpg" alt="Wright Media Airbnb photography" /></a>
+</section>
+
+<section class="carousel-section">
+  <h2 class="gallery-subhead">Boynton Beach, Florida</h2>
+  <div class="carousel" id="pv-canal" data-images="assets/img/airbnb/canal/canal1.jpg,assets/img/airbnb/canal/canal2.jpg,assets/img/airbnb/canal/canal3.jpg,assets/img/airbnb/canal/canal4.jpg,assets/img/airbnb/canal/canal5.jpg,assets/img/airbnb/canal/canal6.jpg,assets/img/airbnb/canal/canal7.jpg">
+    <div class="carousel__track"></div>
+    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
+    <div class="carousel__dots"></div>
   </div>
-</main>
+  <div class="carousel-cta">
+    <button class="btn btn--outline js-gal" type="button" data-target="#gal-canal" data-open="View Gallery">View Gallery</button>
+  </div>
+  <div class="gal-wrap is-hidden" id="gal-canal">
+    <div class="gallery__grid">
+      <a class="gtile" href="assets/img/airbnb/canal-full/f1.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f1.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f2.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f2.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f3.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f3.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f4.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f4.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f5.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f5.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f6.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f6.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f7.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f7.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f8.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f8.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f9.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f9.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f10.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f10.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f11.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f11.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f12.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f12.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f13.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f13.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f14.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f14.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f15.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f15.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f16.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f16.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f17.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f17.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f18.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f18.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f19.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f19.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f20.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f20.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f21.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f21.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f22.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f22.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f23.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f23.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f24.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f24.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f25.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f25.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f26.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f26.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f27.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f27.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f28.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f28.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f29.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f29.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f30.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f30.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f31.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f31.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f32.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f32.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f33.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f33.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f34.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f34.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f35.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f35.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f36.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f36.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f37.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f37.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f38.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f38.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f39.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f39.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f40.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f40.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f41.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f41.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f42.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f42.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f43.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f43.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f44.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f44.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f45.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f45.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f46.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f46.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f47.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f47.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f48.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f48.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f49.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f49.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f50.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f50.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f51.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f51.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f52.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f52.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f53.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f53.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f54.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f54.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f55.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f55.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f56.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f56.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f57.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f57.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f58.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f58.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f59.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f59.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f60.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f60.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f61.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f61.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f62.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f62.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f63.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f63.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f64.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f64.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f65.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f65.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f66.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f66.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f67.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f67.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f68.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f68.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f69.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f69.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f70.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f70.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f71.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f71.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f72.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f72.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f73.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f73.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f74.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f74.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f75.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f75.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f76.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f76.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f77.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f77.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f78.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f78.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f79.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f79.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f80.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f80.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f81.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f81.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f82.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f82.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f83.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f83.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f84.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f84.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f85.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f85.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f86.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f86.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f87.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f87.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f88.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f88.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f89.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f89.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/canal-full/f90.jpg"><img loading="lazy" src="assets/img/airbnb/canal-full/f90.jpg" alt="Wright Media Airbnb photography" /></a>
+    </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#gal-canal" data-back="#pv-canal">Minimize Gallery</button></div>
+  </div>
+</section>
+
+<section class="carousel-section">
+  <h2 class="gallery-subhead">Albany, New York</h2>
+  <div class="carousel" id="pv-albany" data-images="assets/img/airbnb/albany/albany1.jpg,assets/img/airbnb/albany/albany2.jpg,assets/img/airbnb/albany/albany3.jpg,assets/img/airbnb/albany/albany4.jpg,assets/img/airbnb/albany/albany5.jpg,assets/img/airbnb/albany/albany6.jpg,assets/img/airbnb/albany/albany7.jpg,assets/img/airbnb/albany/albany8.jpg,assets/img/airbnb/albany/albany9.jpg,assets/img/airbnb/albany/albany10.jpg,assets/img/airbnb/albany/albany11.jpg">
+    <div class="carousel__track"></div>
+    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
+    <div class="carousel__dots"></div>
+  </div>
+  <div class="carousel-cta">
+    <button class="btn btn--outline js-gal" type="button" data-target="#gal-albany" data-open="View Gallery">View Gallery</button>
+  </div>
+  <div class="gal-wrap is-hidden" id="gal-albany">
+    <div class="gallery__grid">
+      <a class="gtile" href="assets/img/airbnb/albany-full/f1.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f1.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f2.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f2.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f3.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f3.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f4.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f4.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f5.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f5.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f6.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f6.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f7.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f7.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f8.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f8.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f9.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f9.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f10.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f10.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f11.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f11.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f12.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f12.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f13.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f13.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f14.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f14.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f15.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f15.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f16.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f16.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f17.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f17.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f18.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f18.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f19.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f19.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f20.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f20.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f21.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f21.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f22.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f22.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f23.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f23.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f24.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f24.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f25.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f25.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f26.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f26.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f27.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f27.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f28.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f28.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f29.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f29.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f30.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f30.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f31.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f31.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f32.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f32.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f33.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f33.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f34.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f34.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f35.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f35.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f36.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f36.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f37.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f37.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f38.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f38.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f39.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f39.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f40.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f40.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f41.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f41.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f42.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f42.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f43.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f43.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f44.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f44.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f45.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f45.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f46.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f46.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f47.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f47.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f48.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f48.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f49.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f49.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f50.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f50.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f51.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f51.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f52.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f52.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f53.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f53.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f54.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f54.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f55.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f55.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f56.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f56.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f57.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f57.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f58.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f58.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f59.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f59.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f60.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f60.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f61.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f61.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f62.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f62.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f63.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f63.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f64.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f64.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f65.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f65.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f66.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f66.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f67.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f67.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f68.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f68.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f69.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f69.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f70.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f70.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f71.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f71.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f72.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f72.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f73.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f73.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f74.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f74.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f75.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f75.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f76.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f76.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f77.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f77.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f78.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f78.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f79.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f79.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f80.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f80.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f81.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f81.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f82.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f82.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f83.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f83.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f84.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f84.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f85.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f85.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f86.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f86.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f87.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f87.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f88.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f88.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f89.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f89.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f90.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f90.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f91.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f91.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f92.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f92.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f93.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f93.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f94.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f94.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f95.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f95.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f96.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f96.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f97.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f97.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f98.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f98.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f99.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f99.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f100.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f100.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f101.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f101.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f102.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f102.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f103.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f103.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f104.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f104.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f105.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f105.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f106.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f106.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f107.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f107.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f108.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f108.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f109.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f109.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f110.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f110.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f111.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f111.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f112.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f112.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f113.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f113.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f114.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f114.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f115.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f115.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f116.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f116.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f117.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f117.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f118.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f118.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f119.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f119.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f120.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f120.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f121.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f121.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f122.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f122.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f123.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f123.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f124.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f124.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f125.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f125.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f126.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f126.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f127.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f127.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f128.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f128.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f129.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f129.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f130.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f130.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f131.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f131.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f132.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f132.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f133.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f133.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f134.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f134.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f135.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f135.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f136.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f136.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f137.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f137.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f138.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f138.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f139.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f139.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f140.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f140.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f141.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f141.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f142.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f142.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f143.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f143.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f144.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f144.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f145.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f145.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f146.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f146.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f147.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f147.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f148.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f148.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f149.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f149.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f150.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f150.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f151.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f151.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f152.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f152.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f153.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f153.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f154.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f154.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f155.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f155.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f156.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f156.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f157.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f157.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/albany-full/f158.jpg"><img loading="lazy" src="assets/img/airbnb/albany-full/f158.jpg" alt="Wright Media Airbnb photography" /></a>
+    </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#gal-albany" data-back="#pv-albany">Minimize Gallery</button></div>
+  </div>
+</section>
+
+<section class="carousel-section">
+  <h2 class="gallery-subhead">Angel Fire, New Mexico</h2>
+  <div class="carousel" id="pv-angelfire" data-images="assets/img/airbnb/angelfire/angelfire1.jpg,assets/img/airbnb/angelfire/angelfire2.jpg,assets/img/airbnb/angelfire/angelfire3.jpg,assets/img/airbnb/angelfire/angelfire4.jpg,assets/img/airbnb/angelfire/angelfire5.jpg,assets/img/airbnb/angelfire/angelfire6.jpg,assets/img/airbnb/angelfire/angelfire7.jpg,assets/img/airbnb/angelfire/angelfire8.jpg,assets/img/airbnb/angelfire/angelfire9.jpg,assets/img/airbnb/angelfire/angelfire10.jpg,assets/img/airbnb/angelfire/angelfire11.jpg">
+    <div class="carousel__track"></div>
+    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
+    <div class="carousel__dots"></div>
+  </div>
+  <div class="carousel-cta">
+    <button class="btn btn--outline js-gal" type="button" data-target="#gal-angelfire" data-open="View Gallery">View Gallery</button>
+  </div>
+  <div class="gal-wrap is-hidden" id="gal-angelfire">
+    <div class="gallery__grid">
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f1.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f1.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f2.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f2.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f3.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f3.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f4.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f4.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f5.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f5.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f6.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f6.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f7.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f7.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f8.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f8.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f9.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f9.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f10.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f10.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f11.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f11.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f12.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f12.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f13.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f13.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f14.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f14.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f15.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f15.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f16.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f16.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f17.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f17.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f18.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f18.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f19.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f19.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f20.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f20.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f21.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f21.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f22.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f22.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f23.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f23.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f24.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f24.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f25.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f25.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f26.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f26.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f27.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f27.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f28.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f28.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f29.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f29.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f30.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f30.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f31.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f31.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f32.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f32.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f33.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f33.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f34.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f34.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f35.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f35.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f36.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f36.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f37.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f37.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f38.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f38.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f39.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f39.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f40.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f40.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f41.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f41.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f42.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f42.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f43.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f43.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f44.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f44.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f45.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f45.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f46.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f46.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f47.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f47.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f48.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f48.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f49.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f49.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f50.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f50.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f51.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f51.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f52.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f52.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f53.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f53.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f54.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f54.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f55.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f55.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f56.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f56.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f57.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f57.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f58.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f58.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f59.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f59.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f60.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f60.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f61.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f61.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f62.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f62.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f63.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f63.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f64.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f64.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f65.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f65.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f66.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f66.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f67.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f67.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f68.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f68.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f69.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f69.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f70.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f70.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f71.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f71.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f72.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f72.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f73.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f73.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f74.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f74.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f75.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f75.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f76.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f76.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f77.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f77.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f78.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f78.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f79.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f79.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f80.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f80.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f81.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f81.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f82.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f82.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f83.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f83.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f84.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f84.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f85.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f85.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f86.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f86.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f87.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f87.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f88.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f88.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f89.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f89.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f90.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f90.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f91.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f91.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f92.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f92.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f93.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f93.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f94.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f94.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f95.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f95.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f96.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f96.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f97.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f97.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f98.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f98.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f99.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f99.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f100.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f100.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f101.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f101.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/angelfire-full/f102.jpg"><img loading="lazy" src="assets/img/airbnb/angelfire-full/f102.jpg" alt="Wright Media Airbnb photography" /></a>
+    </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#gal-angelfire" data-back="#pv-angelfire">Minimize Gallery</button></div>
+  </div>
+</section>
+
+<section class="carousel-section">
+  <h2 class="gallery-subhead">Lake Ozark, Missouri</h2>
+  <div class="carousel" id="pv-missouri" data-images="assets/img/airbnb/missouri/missouri1.jpg,assets/img/airbnb/missouri/missouri2.jpg,assets/img/airbnb/missouri/missouri3.jpg,assets/img/airbnb/missouri/missouri4.jpg,assets/img/airbnb/missouri/missouri5.jpg,assets/img/airbnb/missouri/missouri6.jpg,assets/img/airbnb/missouri/missouri7.jpg,assets/img/airbnb/missouri/missouri8.jpg,assets/img/airbnb/missouri/missouri9.jpg,assets/img/airbnb/missouri/missouri10.jpg,assets/img/airbnb/missouri/missouri11.jpg">
+    <div class="carousel__track"></div>
+    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
+    <div class="carousel__dots"></div>
+  </div>
+  <div class="carousel-cta">
+    <button class="btn btn--outline js-gal" type="button" data-target="#gal-missouri" data-open="View Gallery">View Gallery</button>
+  </div>
+  <div class="gal-wrap is-hidden" id="gal-missouri">
+    <div class="gallery__grid">
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f1.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f1.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f2.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f2.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f3.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f3.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f4.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f4.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f5.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f5.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f6.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f6.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f7.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f7.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f8.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f8.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f9.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f9.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f10.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f10.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f11.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f11.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f12.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f12.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f13.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f13.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f14.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f14.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f15.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f15.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f16.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f16.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f17.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f17.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f18.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f18.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f19.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f19.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f20.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f20.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f21.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f21.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f22.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f22.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f23.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f23.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f24.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f24.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f25.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f25.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f26.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f26.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f27.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f27.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f28.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f28.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f29.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f29.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f30.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f30.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f31.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f31.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f32.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f32.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f33.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f33.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f34.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f34.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f35.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f35.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f36.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f36.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f37.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f37.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f38.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f38.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f39.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f39.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f40.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f40.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f41.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f41.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f42.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f42.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f43.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f43.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f44.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f44.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f45.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f45.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f46.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f46.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f47.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f47.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f48.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f48.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f49.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f49.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f50.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f50.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f51.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f51.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f52.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f52.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f53.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f53.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f54.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f54.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f55.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f55.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f56.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f56.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f57.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f57.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f58.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f58.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f59.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f59.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f60.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f60.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f61.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f61.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f62.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f62.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f63.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f63.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f64.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f64.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f65.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f65.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f66.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f66.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f67.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f67.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f68.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f68.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f69.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f69.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f70.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f70.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f71.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f71.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f72.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f72.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f73.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f73.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f74.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f74.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f75.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f75.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f76.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f76.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f77.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f77.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f78.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f78.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f79.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f79.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f80.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f80.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f81.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f81.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f82.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f82.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f83.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f83.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f84.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f84.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f85.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f85.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f86.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f86.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f87.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f87.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f88.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f88.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f89.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f89.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f90.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f90.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f91.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f91.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f92.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f92.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f93.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f93.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f94.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f94.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f95.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f95.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f96.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f96.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f97.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f97.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f98.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f98.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f99.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f99.jpg" alt="Wright Media Airbnb photography" /></a>
+      <a class="gtile" href="assets/img/airbnb/missouri-full/f100.jpg"><img loading="lazy" src="assets/img/airbnb/missouri-full/f100.jpg" alt="Wright Media Airbnb photography" /></a>
+    </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#gal-missouri" data-back="#pv-missouri">Minimize Gallery</button></div>
+  </div>
+</section>
 
 <section class="gallery-cta">
+  <p class="overline">Dakoda is available for travel nationwide</p>
   <h2>Ready to boost your bookings?</h2>
   <a href="index.html#contact" class="btn btn--pill">Get Started</a>
   <a href="index.html" class="gallery-cta__back">&#8592; Back to Home</a>
@@ -184,6 +815,6 @@
   <button class="lightbox__nav lightbox__next" aria-label="Next">&#8250;</button>
 </div>
 
-<script src="assets/js/gallery.js"></script>
+<script src="assets/js/gallery.js?v=3"></script>
 </body>
 </html>

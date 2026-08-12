@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/styles.css" />
-<link rel="stylesheet" href="assets/css/gallery.css" />
+<link rel="stylesheet" href="assets/css/styles.css?v=3" />
+<link rel="stylesheet" href="assets/css/gallery.css?v=3" />
 <link rel="icon" href="assets/img/logo.png" />
 </head>
 <body class="gallery-page">
@@ -47,9 +47,9 @@
 </div>
 
 <section class="gallery-hero">
-  <p class="overline">Portfolio</p>
+  <p class="overline">Catalog</p>
   <h1>Resorts</h1>
-  <p class="gallery-hero__sub">Culinary and event photography that captures the experience &mdash; for South Florida's finest hospitality brands.</p>
+  <p class="gallery-hero__sub gallery-hero__sub--wide">Capture the full resort experience with professional photography of culinary offerings, events, dining experiences, and special occasions. Show potential guests what makes your resort worth experiencing and help drive bookings, dining reservations, and event inquiries.</p>
 </section>
 
 <section class="carousel-section">
@@ -60,7 +60,7 @@
     <div class="carousel__dots"></div>
   </div>
   <div class="carousel-cta">
-    <button class="btn btn--outline" id="viewFullBtn" type="button">View Full Gallery</button>
+    <button class="btn btn--outline js-gal" type="button" data-target="#fullGallery" data-open="View Full Gallery">View Full Gallery</button>
   </div>
 </section>
 
@@ -117,6 +117,7 @@
       <a class="gtile" href="assets/img/resorts/events22.jpg"><img loading="lazy" src="assets/img/resorts/events22.jpg" alt="Wright Media resort event photography" /></a>
       <a class="gtile" href="assets/img/resorts/events23.jpg"><img loading="lazy" src="assets/img/resorts/events23.jpg" alt="Wright Media resort event photography" /></a>
   </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#fullGallery" data-back="#pvCarousel">Minimize Gallery</button></div>
 </main>
 
 <section class="gallery-cta">
@@ -151,6 +152,6 @@
   <button class="lightbox__nav lightbox__next" aria-label="Next">&#8250;</button>
 </div>
 
-<script src="assets/js/gallery.js"></script>
+<script src="assets/js/gallery.js?v=3"></script>
 </body>
 </html>

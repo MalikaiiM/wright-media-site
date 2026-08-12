@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Construction — Wright Media | Drone Documentation</title>
-<meta name="description" content="Construction documentation and drone photography by Wright Media across South Florida." />
+<title>Construction — Wright Media | Drone Documentation & Render Videos</title>
+<meta name="description" content="Construction documentation, drone photography, and render construction videos by Wright Media across South Florida." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/styles.css" />
-<link rel="stylesheet" href="assets/css/gallery.css" />
+<link rel="stylesheet" href="assets/css/styles.css?v=3" />
+<link rel="stylesheet" href="assets/css/gallery.css?v=3" />
 <link rel="icon" href="assets/img/logo.png" />
 </head>
 <body class="gallery-page">
@@ -52,10 +52,25 @@
   </video>
   <div class="hero__scrim"></div>
   <div class="hero__inner">
-    <p class="overline">Portfolio</p>
+    <p class="overline">Catalog</p>
     <h1 class="hero__title">Construction</h1>
     <p class="gallery-hero__sub">Weekly drone progress, timelapse, and milestone coverage &mdash; from groundbreaking to completion.</p>
   </div>
+</section>
+
+<section class="sect-head">
+  <h2 class="gallery-subhead">Render Construction Videos</h2>
+  <p class="pv-copy">Bring your construction projects to life with cinematic visualizations that showcase the vision, design, and finished result. Ideal for marketing, presentations, and giving clients a clear look at what's to come.</p>
+  <div class="vid-embed">
+    <video autoplay muted loop playsinline poster="assets/video/render-poster.jpg">
+      <source src="assets/video/render-video.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
+
+<section class="sect-head">
+  <h2 class="gallery-subhead">Photo Documentation</h2>
+  <p class="pv-copy">Stay on top of your project with professional aerial and ground photography documenting construction progress from start to finish. Regular photo updates provide valuable records for owners, contractors, and stakeholders while showcasing your project's progress.</p>
 </section>
 
 <section class="carousel-section">
@@ -66,7 +81,7 @@
     <div class="carousel__dots"></div>
   </div>
   <div class="carousel-cta">
-    <button class="btn btn--outline" id="viewFullBtn" type="button">View Full Gallery</button>
+    <button class="btn btn--outline js-gal" type="button" data-target="#fullGallery" data-open="View Full Gallery">View Full Gallery</button>
   </div>
 </section>
 
@@ -100,6 +115,7 @@
       <a class="gtile" href="assets/img/construction/c26.jpg"><img loading="lazy" src="assets/img/construction/c26.jpg" alt="Wright Media construction drone documentation" /></a>
       <a class="gtile" href="assets/img/construction/c27.jpg"><img loading="lazy" src="assets/img/construction/c27.jpg" alt="Wright Media construction drone documentation" /></a>
   </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#fullGallery" data-back="#pvCarousel">Minimize Gallery</button></div>
 </main>
 
 <section class="gallery-cta">
@@ -134,6 +150,6 @@
   <button class="lightbox__nav lightbox__next" aria-label="Next">&#8250;</button>
 </div>
 
-<script src="assets/js/gallery.js"></script>
+<script src="assets/js/gallery.js?v=3"></script>
 </body>
 </html>

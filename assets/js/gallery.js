@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  /* nav scroll + mobile toggle (gallery page) */
+  /* nav scroll + mobile toggle (gallery pages) */
   const toggle = document.getElementById('navToggle');
   const mobile = document.getElementById('navMobile');
   if (toggle) {
@@ -21,12 +21,21 @@
     });
   });
 
-  /* preview carousel (slide + crossfade, 3s auto) */
-  const pv = document.getElementById('pvCarousel');
-  if (pv) {
+  /* preview carousels (slide + crossfade, 3s auto) — supports several per page */
+  document.querySelectorAll('.carousel[data-images]').forEach(pv => {
     const imgs = pv.dataset.images.split(',');
     const track = pv.querySelector('.carousel__track');
     const dotsWrap = pv.querySelector('.carousel__dots');
+    let idx = 0, timer = null;
+    function go(n, user) {
+      const slides = track.children;
+      const prev = idx;
+      idx = (n + slides.length) % slides.length;
+      if (idx === prev) return;
+      Array.from(slides).forEach((s, i) => { s.classList.toggle('is-active', i === idx); s.classList.toggle('is-exit', i === prev); });
+      Array.from(dotsWrap.children).forEach((d, i) => d.classList.toggle('is-active', i === idx));
+      if (user) restart();
+    }
     imgs.forEach((src, i) => {
       const slide = document.createElement('div');
       slide.className = 'carousel__slide' + (i === 0 ? ' is-active' : '');
@@ -42,17 +51,6 @@
       dot.addEventListener('click', () => go(i, true));
       dotsWrap.appendChild(dot);
     });
-    const slides = Array.from(track.querySelectorAll('.carousel__slide'));
-    const dots = Array.from(dotsWrap.children);
-    let idx = 0, timer = null;
-    function go(n, user) {
-      const prev = idx;
-      idx = (n + slides.length) % slides.length;
-      if (idx === prev) return;
-      slides.forEach((s, i) => { s.classList.toggle('is-active', i === idx); s.classList.toggle('is-exit', i === prev); });
-      dots.forEach((d, i) => d.classList.toggle('is-active', i === idx));
-      if (user) restart();
-    }
     function start() { timer = setInterval(() => go(idx + 1), 3000); }
     function restart() { clearInterval(timer); start(); }
     pv.querySelector('.carousel__arrow--next').addEventListener('click', () => go(idx + 1, true));
@@ -60,17 +58,32 @@
     pv.addEventListener('mouseenter', () => clearInterval(timer));
     pv.addEventListener('mouseleave', restart);
     start();
-  }
+  });
 
-  /* view full gallery */
-  const vfb = document.getElementById('viewFullBtn');
-  if (vfb) vfb.addEventListener('click', () => {
-    const g = document.getElementById('fullGallery');
-    if (g) {
-      g.classList.remove('is-hidden');
-      vfb.parentElement.style.display = 'none';
-      setTimeout(() => g.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
-    }
+  /* view / minimize gallery toggles */
+  document.querySelectorAll('.js-gal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const g = document.querySelector(btn.dataset.target);
+      if (!g) return;
+      const opening = g.classList.contains('is-hidden');
+      g.classList.toggle('is-hidden');
+      document.querySelectorAll(`.js-gal[data-target="${btn.dataset.target}"][data-open]`).forEach(b => {
+        b.textContent = opening ? 'Minimize Gallery' : b.dataset.open;
+      });
+      if (opening) {
+        setTimeout(() => g.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+      } else if (btn.dataset.back) {
+        const back = document.querySelector(btn.dataset.back);
+        if (back) back.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  });
+
+  /* nudge below-the-fold autoplay videos when they come into view */
+  document.querySelectorAll('video[autoplay]').forEach(v => {
+    const tryPlay = () => { const p = v.play(); if (p) p.catch(() => {}); };
+    const vio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) tryPlay(); }), { threshold: 0.2 });
+    vio.observe(v);
   });
 
   /* fade tiles in as they load */

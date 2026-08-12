@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/styles.css" />
-<link rel="stylesheet" href="assets/css/gallery.css" />
+<link rel="stylesheet" href="assets/css/styles.css?v=3" />
+<link rel="stylesheet" href="assets/css/gallery.css?v=3" />
 <link rel="icon" href="assets/img/logo.png" />
 </head>
 <body class="gallery-page">
@@ -47,7 +47,7 @@
 </div>
 
 <section class="gallery-hero">
-  <p class="overline">Portfolio</p>
+  <p class="overline">Catalog</p>
   <h1>Residential</h1>
   <p class="gallery-hero__sub">Luxury real estate photography &amp; video across Palm Beach and South Florida. We don't believe in "good enough."</p>
 </section>
@@ -60,7 +60,7 @@
     <div class="carousel__dots"></div>
   </div>
   <div class="carousel-cta">
-    <button class="btn btn--outline" id="viewFullBtn" type="button">View Full Gallery</button>
+    <button class="btn btn--outline js-gal" type="button" data-target="#fullGallery" data-open="View Full Gallery">View Full Gallery</button>
   </div>
 </section>
 
@@ -112,10 +112,11 @@
       <a class="gtile" href="assets/img/residential/r44.jpg"><img loading="lazy" src="assets/img/residential/r44.jpg" alt="Wright Media residential real estate photography" /></a>
       <a class="gtile" href="assets/img/residential/r45.jpg"><img loading="lazy" src="assets/img/residential/r45.jpg" alt="Wright Media residential real estate photography" /></a>
   </div>
+  <div class="gal-min"><button class="btn btn--outline js-gal" type="button" data-target="#fullGallery" data-back="#pvCarousel">Minimize Gallery</button></div>
 </main>
 
 <section class="pv-videos">
-  <h2 class="gallery-subhead">Vertical Tours</h2>
+  <h2 class="gallery-subhead">Branded Video Content</h2>
   <div class="pv-videos__row">
     <div class="phone">
       <div class="phone__notch"></div>
@@ -164,6 +165,6 @@
   <button class="lightbox__nav lightbox__next" aria-label="Next">&#8250;</button>
 </div>
 
-<script src="assets/js/gallery.js"></script>
+<script src="assets/js/gallery.js?v=3"></script>
 </body>
 </html>

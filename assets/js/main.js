@@ -17,41 +17,6 @@
   const mpl = document.querySelector('.nav__mobile-label');
   if (mpl) mpl.addEventListener('click', () => mpl.parentElement.classList.toggle('show-portfolio'));
 
-  /* ---------- services carousel: coverflow (center in focus, sides behind) ---------- */
-  const sc = document.getElementById('svcCarousel');
-  if (sc) {
-    const cards = Array.from(sc.querySelectorAll('.svc-card'));
-    let active = 0, stimer = null;
-    function layout() {
-      const h = Math.max(...cards.map(c => c.offsetHeight));
-      if (h > 40) sc.style.height = h + 'px';
-    }
-    function render() {
-      cards.forEach((c, i) => {
-        const off = (i - active + cards.length) % cards.length;
-        c.classList.toggle('pos-center', off === 0);
-        c.classList.toggle('pos-right', off === 1);
-        c.classList.toggle('pos-left', off === 2);
-      });
-    }
-    function sstart() { stimer = setInterval(() => { active = (active + 1) % cards.length; render(); }, 3600); }
-    /* click a side card → bring it to the front; click the front card → open its page */
-    cards.forEach((c, i) => c.addEventListener('click', (e) => {
-      if (!c.classList.contains('pos-center')) {
-        e.preventDefault();
-        active = i;
-        render();
-        clearInterval(stimer); sstart();
-      }
-    }));
-    sc.addEventListener('mouseenter', () => clearInterval(stimer));
-    sc.addEventListener('mouseleave', sstart);
-    window.addEventListener('resize', layout);
-    window.addEventListener('load', layout);
-    sc.querySelectorAll('img').forEach(img => img.addEventListener('load', layout));
-    render(); layout(); setTimeout(layout, 400); sstart();
-  }
-
   /* ---------- click dropdowns (nav Portfolio + CTA buttons) ---------- */
   document.querySelectorAll('.cta-drop .cta-drop__btn').forEach(btn =>
     btn.addEventListener('click', () => btn.parentElement.classList.toggle('is-open')));
