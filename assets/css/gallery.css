@@ -43,3 +43,21 @@
 .lightbox__prev{left:18px}
 .lightbox__next{right:18px}
 @media(max-width:560px){.lightbox__nav{width:44px;height:44px;font-size:1.4rem}}
+
+/* gallery sub-section heading (Resorts: Culinary / Events) */
+.gallery-subhead{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);text-align:center;
+  font-weight:500;letter-spacing:.01em;margin:clamp(34px,5vw,56px) 0 clamp(18px,3vw,28px)}
+.gallery .gallery-subhead:first-child{margin-top:0}
+
+/* preview carousel + gated full gallery */
+.gallery.is-hidden{display:none}
+.gallery-page .carousel-section{padding-top:0}
+.pv-videos{padding:clamp(40px,6vw,80px) var(--gutter) clamp(50px,7vw,90px)}
+.pv-videos__row{display:flex;justify-content:center;gap:clamp(28px,5vw,70px);flex-wrap:wrap;
+  margin-top:clamp(24px,4vw,40px)}
+
+/* video page header (construction) */
+.hero--page{height:70vh;min-height:420px;max-height:760px}
+.hero--page .hero__title{font-size:clamp(2.2rem,4.6vw,3.8rem)}
+.hero--page .gallery-hero__sub{margin-top:6px}
+.gallery-page .hero--page + .carousel-section{padding-top:clamp(50px,7vw,90px)}

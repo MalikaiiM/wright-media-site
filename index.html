@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Wright Media — Luxury Residential Real Estate Photography & Video | Palm Beach, FL</title>
-<meta name="description" content="Wright Media — luxury residential real estate photography & video tours serving Palm Beach County: Wellington, Boynton Beach, Boca Raton & South Florida. We don't believe in 'good enough'." />
+<title>Wright Media — Media for South Florida's Finest Properties | Palm Beach, FL</title>
+<meta name="description" content="Wright Media — luxury real estate, construction, and Airbnb media for South Florida. Cinematic photography, video tours, and drone coverage across Palm Beach, West Palm Beach, Delray Beach, Boca Raton, Jupiter & Wellington." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -20,20 +20,30 @@
     <span class="nav__name">WRIGHT MEDIA</span>
   </a>
   <nav class="nav__links">
+    <a href="#hero">Home</a>
+    <div class="nav__drop">
+      <a href="#portfolio" class="nav__drop-btn">Portfolio <span class="nav__caret" aria-hidden="true">&#9662;</span></a>
+      <div class="nav__menu">
+        <a href="gallery.html">Residential</a>
+        <a href="construction.html">Construction</a>
+        <a href="airbnb.html">Airbnb</a>
+        <a href="resorts.html">Resorts</a>
+      </div>
+    </div>
     <a href="#about">About</a>
-    <a href="#services-list">Services</a>
-    <a href="gallery.html">Portfolio</a>
-    <a href="#contact">Contact</a>
   </nav>
-  <a href="#contact" class="btn btn--pill nav__cta">Book Now</a>
+  <a href="#contact" class="btn btn--pill nav__cta">Contact</a>
   <button class="nav__toggle" aria-label="Menu" id="navToggle"><span></span><span></span><span></span></button>
 </header>
 <div class="nav__mobile" id="navMobile">
+  <a href="#hero">Home</a>
+  <button class="nav__mobile-label" type="button">Portfolio <span class="nav__caret" aria-hidden="true">&#9662;</span></button>
+  <a href="gallery.html" class="nav__mobile-sub">Residential</a>
+  <a href="construction.html" class="nav__mobile-sub">Construction</a>
+  <a href="airbnb.html" class="nav__mobile-sub">Airbnb</a>
+  <a href="resorts.html" class="nav__mobile-sub">Resorts</a>
   <a href="#about">About</a>
-  <a href="#services-list">Services</a>
-  <a href="gallery.html">Portfolio</a>
-  <a href="#contact">Contact</a>
-  <a href="#contact" class="btn btn--pill">Book Now</a>
+  <a href="#contact" class="btn btn--pill">Contact</a>
 </div>
 
 <!-- ============ 1. HERO ============ -->
@@ -45,34 +55,50 @@
   <div class="hero__scrim"></div>
   <div class="hero__inner">
     <p class="overline">Palm Beach · South Florida</p>
-    <h1 class="hero__title">Luxury Real Estate Media</h1>
+    <h1 class="hero__title">Media for South Florida's finest properties</h1>
     <a href="tel:+15616762130" class="btn btn--pill hero__cta">(561) 676-2130</a>
   </div>
 </section>
 
-<!-- ============ 2. COMPANY DESCRIPTION BAND ============ -->
+<!-- ============ 2. SEO INTRO BAND ============ -->
 <section class="band" id="intro">
-  <h2 class="band__title">Wright Media <span>|</span> Luxury residential photography and video tours</h2>
-  <p class="band__sub">We don't believe in "good enough." Every frame is crafted to elevate the home, the brand, and the story behind it.</p>
+  <p class="band__sub">For over 10 years, Wright Media has produced luxury real estate media, construction documentation, and Airbnb marketing across Palm Beach and South Florida — with every project held to one cinematic standard.</p>
 </section>
 
-<!-- ============ 3. CAROUSEL (two variations) ============ -->
-<section class="carousel-section" id="residential">
+<!-- ============ 3. WHAT WE DO — auto-sliding portfolio boxes ============ -->
+<section class="carousel-section" id="portfolio">
   <div class="carousel-head">
-    <p class="overline">Residential</p>
+    <p class="overline">Our Signature Services</p>
   </div>
-
-  <!-- combined slide + crossfade, full image (no crop) over a soft blurred fill -->
-  <div class="carousel" id="carousel">
-    <div class="carousel__track"></div>
-    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&#8249;</button>
-    <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&#8250;</button>
-    <div class="carousel__dots"></div>
+  <div class="svc-carousel" id="svcCarousel">
+    <div class="svc-track">
+      <a class="svc-card" href="gallery.html">
+        <span class="svc-card__img"><img src="assets/img/services/real-estate.jpg" alt="Real estate photography and video" loading="lazy" /></span>
+        <h3>Real Estate Photography &amp; Video</h3>
+        <p>Cinematic real estate photography and video tours that make listings sell faster. Serving agents and developers across Palm Beach and South Florida.</p>
+      </a>
+      <a class="svc-card" href="construction.html">
+        <span class="svc-card__img"><img src="assets/img/services/construction.jpg" alt="Construction documentation" loading="lazy" /></span>
+        <h3>Construction Documentation</h3>
+        <p>Weekly drone progress, timelapse, and milestone coverage that keep your project documented from groundbreaking to completion.</p>
+      </a>
+      <a class="svc-card" href="airbnb.html">
+        <span class="svc-card__img"><img src="assets/img/services/airbnb.jpg" alt="Airbnb marketing" loading="lazy" /></span>
+        <h3>Airbnb Marketing</h3>
+        <p>Scroll-stopping photography and video that lift bookings and set your rental apart in a crowded market.</p>
+      </a>
+    </div>
   </div>
-
-  <!-- 3.5 Portfolio button -->
   <div class="carousel-cta">
-    <a href="gallery.html" class="btn btn--outline">Portfolio</a>
+    <div class="cta-drop">
+      <button class="btn btn--outline cta-drop__btn" type="button">Portfolio <span class="nav__caret" aria-hidden="true">&#9662;</span></button>
+      <div class="cta-drop__menu">
+        <a href="gallery.html">Residential</a>
+        <a href="construction.html">Construction</a>
+        <a href="airbnb.html">Airbnb</a>
+        <a href="resorts.html">Resorts</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -82,7 +108,15 @@
     <p class="overline">The Reel</p>
     <h2>We craft engaging content that builds powerful brands.</h2>
     <p>From cinematic walk-throughs to social-ready vertical tours, our video puts every listing in motion — scripted, shot, and edited to command attention.</p>
-    <a href="gallery.html" class="btn btn--outline">View Portfolio</a>
+    <div class="cta-drop">
+      <button class="btn btn--outline cta-drop__btn" type="button">View Portfolio <span class="nav__caret" aria-hidden="true">&#9662;</span></button>
+      <div class="cta-drop__menu">
+        <a href="gallery.html">Residential</a>
+        <a href="construction.html">Construction</a>
+        <a href="airbnb.html">Airbnb</a>
+        <a href="resorts.html">Resorts</a>
+      </div>
+    </div>
   </div>
   <div class="reel__phone">
     <div class="phone">
@@ -95,88 +129,117 @@
   </div>
 </section>
 
-<!-- ============ 5. TESTIMONIALS ============ -->
-<section class="testimonials" id="testimonials">
-  <h2 class="section-title">What People Are Saying About Us</h2>
-  <div class="testimonials__grid">
-    <figure class="tcard">
-      <div class="tcard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <blockquote>Wright Media captured our listing exactly the way we envisioned it — elevated, clean, and true to the home. The kind of work that sells a property before the first showing.</blockquote>
-      <figcaption>
-        <span class="tcard__avatar" aria-hidden="true">JM</span>
-        <span class="tcard__who"><strong>Judge M.</strong><span>Sotheby's International Realty</span></span>
-      </figcaption>
-    </figure>
-    <figure class="tcard">
-      <div class="tcard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <blockquote>Professional, responsive, and genuinely talented. Dakoda and the team deliver imagery that makes every home look its absolute best. I won't shoot a luxury listing without them.</blockquote>
-      <figcaption>
-        <span class="tcard__avatar" aria-hidden="true">BG</span>
-        <span class="tcard__who"><strong>Barry G.</strong><span>Douglas Elliman</span></span>
-      </figcaption>
-    </figure>
-    <figure class="tcard">
-      <div class="tcard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <blockquote>The video tour they produced was stunning. Wright Media understands light, space, and story — the final cut had our clients reaching out the same day it went live.</blockquote>
-      <figcaption>
-        <span class="tcard__avatar" aria-hidden="true">AS</span>
-        <span class="tcard__who"><strong>Anna S.</strong><span>MarineMax Jupiter</span></span>
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ============ 6. BRAND LIST MARQUEE ============ -->
-<section class="brands" id="brands">
-  <h2 class="section-title section-title--serif">Our Clients</h2>
-  <div class="marquee">
-    <div class="marquee__track" id="marqueeTrack">
-      <!-- placeholders, sized for easy swap-in -->
-      <span class="brandph">Sotheby's Int'l Realty</span>
-      <span class="brandph">Douglas Elliman</span>
-      <span class="brandph">Coldwell Banker</span>
-      <span class="brandph">Brown Harris Stevens</span>
-      <span class="brandph">Illustrated Properties</span>
-      <span class="brandph">MarineMax</span>
-      <span class="brandph">Four Seasons</span>
-      <span class="brandph">RE/MAX Jupiter</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 7. ABOUT ============ -->
+<!-- ============ 5. ABOUT ============ -->
+<!-- NOTE(copy): using the 02_About Page bio per instruction. Home doc has an alternate shorter blurb if preferred. -->
 <section class="about" id="about">
   <div class="about__img">
-    <img src="assets/img/dakoda.jpg" alt="Dakoda Wright, Founder + Creative Director of Wright Media" />
+    <img src="assets/img/dakoda-about.jpg" alt="Dakoda Wright, Founder + Creative Director of Wright Media" />
   </div>
   <div class="about__copy">
-    <p class="overline">Who We Are</p>
+    <p class="overline">About</p>
     <h2>We don't believe in "good enough."</h2>
-    <p>At Wright Media we are dedicated to creating captivating visual media that equips our clients to grow and build their brand — from real estate photography and yacht photography to resort photography and every other form of creative media. We are founded upon the values of Jesus Christ and pursue excellence in all we do for our clients.</p>
+    <p>Welcome! I'm Dakoda — the eye behind Wright Media. For over 10 years, I've had the privilege of producing marketing media for some of South Florida's most remarkable properties. At Wright Media we capture luxury real estate, construction, and hospitality media for the agents, developers, custom home builders, general contractors, and hospitality brands who care deeply about how their work is presented. I'm grateful to serve clients across Palm Beach, West Palm Beach, Delray Beach, Boca Raton, Jupiter, Wellington, and the surrounding South Florida region.</p>
+    <p>Every property tells a story, and my job is to tell it beautifully.</p>
     <blockquote class="about__verse">"And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him."<cite>Colossians 3:17</cite></blockquote>
     <p class="about__sign"><strong>Dakoda Wright</strong><span>Founder + Creative Director</span></p>
     <p class="about__blessed">Have a blessed day.</p>
   </div>
 </section>
 
-<!-- ============ Services list (anchor target) ============ -->
-<section class="services" id="services-list">
-  <h2 class="section-title">What We Do</h2>
-  <ul class="services__grid">
-    <li><span>01</span>Photography</li>
-    <li><span>02</span>Video Tours</li>
-    <li><span>03</span>Virtual Tours</li>
-    <li><span>04</span>Virtual Staging</li>
-    <li><span>05</span>Floor Plans</li>
-  </ul>
+<!-- ============ 6. TESTIMONIALS — card carousel, gold stars ============ -->
+<section class="testimonials" id="testimonials">
+  <h2 class="section-title">What They're Saying</h2>
+  <div class="tcarousel" id="tcarousel">
+    <button class="tcarousel__arrow tcarousel__prev" aria-label="Previous reviews">&#8249;</button>
+    <div class="tcarousel__viewport">
+      <div class="tcarousel__track">
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Wright Media was incredible to work with! Dakoda went above and beyond most photographers, taking time to shoot for me on a Sunday morning when it was best for my Seller's schedule. His attention to detail really shows in the quality of the photos and video. I would highly recommend working with him if you are an agent! I would trust him to photograph any multimillion dollar listing."</blockquote>
+          <figcaption><img src="assets/img/reviews/dagan-gose.jpg" alt="Dagan Gose" loading="lazy" /><span class="tcard__who"><strong>Dagan Gose</strong><span>Corcoran</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"I have used Dakoda Wright for several of my residential real estate listings. Dakoda has an incredible talent for photography for capturing the details of an interior room as well as the exterior elevations of a home. I also use Dakoda to create videos and floor plans of the properties. He is a true professional."</blockquote>
+          <figcaption><img src="assets/img/reviews/judge-moss.jpg" alt="Judge Moss" loading="lazy" /><span class="tcard__who"><strong>Judge Moss</strong><span>Sotheby's International Realty</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Wright Media did a fantastic job capturing the home. Dakoda was professional, easy to work with, and very creative. He put together a high-end final product, including an Instagram video that got thousands of views and great exposure. We were really happy with the results and would absolutely recommend Wright Media for your next project."</blockquote>
+          <figcaption><img src="assets/img/reviews/stephanie-meeker.jpg" alt="Stephanie Meeker" loading="lazy" /><span class="tcard__who"><strong>Stephanie Meeker</strong><span>Illustrated Properties</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Wright Media showed both mastery of the craft and dedication to quality, to deliver 1st-rate professional drone work, photography, and video. His skilled and artful eye draws out the best in both his human and material subjects. Highly recommended!!!"</blockquote>
+          <figcaption><img src="assets/img/reviews/barry-gutknecht.jpg" alt="Barry Gutknecht" loading="lazy" /><span class="tcard__who"><strong>Barry Gutknecht</strong><span>Compass</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Dakoda was extremely professional and helped me through the entire process. He had great recommendations and a creative eye. The end product turned out amazing, syncing the video to the music perfectly and encompassing the lifestyle that the property offers."</blockquote>
+          <figcaption><img src="assets/img/reviews/cole-devitt.jpg" alt="Cole Devitt" loading="lazy" /><span class="tcard__who"><strong>Cole Devitt</strong><span>Premier Estate Properties</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Incredible work! I've used him a few times and he always does a splendid job. The quality, ideas and efforts always goes beyond that is needed. Also takes very little time in getting the photos back to you and ready to use which is always a plus!"</blockquote>
+          <figcaption><img src="assets/img/reviews/bronwin-chandler.jpg" alt="Bronwin Chandler" loading="lazy" /><span class="tcard__who"><strong>Bronwin Chandler</strong><span>Illustrated Properties</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Love using Dakoda for our Airbnb properties. He takes his time and makes sure that the photos clearly depict how hard we work creating special vacation homes. His pictures tell our story!!"</blockquote>
+          <figcaption><img src="assets/img/reviews/elona-diamond.jpg" alt="Elona Diamond" loading="lazy" /><span class="tcard__who"><strong>Elona Diamond</strong><span>Exhale Vacation Rentals</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Dakoda is my first call! Every time! He really goes above and beyond to make sure the property is shown in the best light!"</blockquote>
+          <figcaption><img src="assets/img/reviews/trisha-hutchinson.jpg" alt="Trisha Hutchinson" loading="lazy" /><span class="tcard__who"><strong>Trisha Hutchinson</strong><span>William Raveis</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Dakoda exceeded all expectations! Not only was he punctual, but his attention to detail and commitment to delivering top-notch quality photos truly impressed. His swift turnaround time was a bonus, and the pricing was reasonable for the exceptional service provided. Highly recommend!"</blockquote>
+          <figcaption><img src="assets/img/reviews/liliana-ruiz.jpg" alt="Liliana Ruiz" loading="lazy" /><span class="tcard__who"><strong>Liliana Ruiz</strong><span>Lifestyle International Realty</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"It was a pleasure working with Dakoda. He's very good with communication, very professional and was well prepared for the photographer session. Would highly recommend."</blockquote>
+          <figcaption><img src="assets/img/reviews/hongying-vitureira.jpg" alt="Hongying Vitureira" loading="lazy" /><span class="tcard__who"><strong>Hongying Vitureira</strong><span>Lifestyle International Realty</span></span></figcaption>
+        </figure>
+        <figure class="tcard">
+          <div class="tcard__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Dakoda was so amazing. He is so professional so thorough. The pictures came out amazing — I highly highly highly recommend him. Not to mention, I had other realtors asking me who did my photos as they were so impressed."</blockquote>
+          <figcaption><img src="assets/img/reviews/ketie-jean.jpg" alt="Ketie Jean" loading="lazy" /><span class="tcard__who"><strong>Ketie Jean</strong><span>Lifestyle International Realty</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+    <button class="tcarousel__arrow tcarousel__next" aria-label="Next reviews">&#8250;</button>
+    <div class="tcarousel__dots"></div>
+  </div>
+</section>
+
+<!-- ============ 7. BRAND LIST MARQUEE ============ -->
+<section class="brands" id="brands">
+  <h2 class="section-title section-title--serif">Our Clients</h2>
+  <div class="marquee">
+    <div class="marquee__track" id="marqueeTrack">
+      <span class="brandchip"><img src="assets/img/logos/sothebys.png" alt="Sotheby's International Realty" /></span>
+      <span class="brandchip"><img src="assets/img/logos/corcoran-logo.png" alt="Corcoran" /></span>
+      <span class="brandchip"><img src="assets/img/logos/douglas.png" alt="Douglas Elliman" /></span>
+      <span class="brandchip"><img src="assets/img/logos/cb.png" alt="Coldwell Banker" /></span>
+      <span class="brandchip"><img src="assets/img/logos/brown-harris.png" alt="Brown Harris Stevens" /></span>
+      <span class="brandchip"><img src="assets/img/logos/illustrated-properties.png" alt="Illustrated Properties" /></span>
+      <span class="brandchip"><img src="assets/img/logos/william-raveis.png" alt="William Raveis" /></span>
+      <span class="brandchip"><img src="assets/img/logos/premier-estate.png" alt="Premier Estate Properties" /></span>
+      <span class="brandchip"><img src="assets/img/logos/exhale.png" alt="Exhale Vacation Rentals" /></span>
+      <span class="brandchip"><img src="assets/img/logos/fs.png" alt="Four Seasons" /></span>
+    </div>
+  </div>
 </section>
 
 <!-- ============ 8. CONTACT ============ -->
 <section class="contact" id="contact">
   <div class="contact__panel">
     <img src="assets/img/logo.png" alt="" class="contact__mark" />
-    <h2>Are you ready to build a brand? Let's talk.</h2>
-    <p class="contact__lead">Our team would love to connect with you, learn more about your goals, and discover how we fit in.</p>
+    <h2>Let's talk about your next project.</h2>
+    <p class="contact__lead">Fill out the form below and we will be in touch!</p>
     <form class="contact__form" id="contactForm" novalidate>
       <input type="text" name="name" placeholder="Full Name" required />
       <div class="contact__row">
@@ -188,8 +251,13 @@
       <p class="contact__status" id="contactStatus" role="status"></p>
     </form>
     <div class="contact__details">
-      <a href="tel:+15616762130">(561) 676-2130</a>
-      <a href="mailto:W@wrightmediaofficial.com">W@wrightmediaofficial.com</a>
+      <p class="contact__reach">Reach us directly</p>
+      <p class="contact__who">Dakoda Wright — Wright Media</p>
+      <span class="contact__divider" aria-hidden="true"></span>
+      <div class="contact__lines">
+        <a href="tel:+15616762130">(561) 676-2130</a>
+        <a href="mailto:W@wrightmediaofficial.com">W@wrightmediaofficial.com</a>
+      </div>
     </div>
   </div>
   <div class="contact__media" aria-hidden="true">
@@ -207,25 +275,27 @@
   </div>
   <div class="footer__col">
     <h3>Menu</h3>
+    <a href="#hero">Home</a>
+    <a href="gallery.html">Residential</a>
+    <a href="construction.html">Construction</a>
+    <a href="airbnb.html">Airbnb</a>
+    <a href="resorts.html">Resorts</a>
     <a href="#about">About</a>
-    <a href="#services-list">Services</a>
-    <a href="gallery.html">Portfolio</a>
     <a href="#contact">Contact</a>
   </div>
   <div class="footer__col">
     <h3>Areas We Cover</h3>
-    <span>Palm Beach County</span>
-    <span>Wellington</span>
-    <span>Boynton Beach</span>
+    <span>Palm Beach</span>
+    <span>West Palm Beach</span>
+    <span>Delray Beach</span>
     <span>Boca Raton</span>
-    <span>South Florida</span>
+    <span>Jupiter</span>
+    <span>Wellington</span>
   </div>
   <div class="footer__col">
     <h3>Follow Us</h3>
     <div class="footer__social">
       <a href="https://www.instagram.com/wrightmediaofficial/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-      <a href="#" aria-label="Facebook">FB</a>
-      <a href="#" aria-label="YouTube">YT</a>
     </div>
     <p class="footer__copy">&copy; 2026 Wright Media. All rights reserved.</p>
   </div>
