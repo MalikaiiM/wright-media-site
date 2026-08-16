@@ -1,6 +1,15 @@
 (() => {
   'use strict';
 
+  /* one-tap tel/mailto inside the Wix embed (iframes block the tap) */
+  if (window.self !== window.top) {
+    document.querySelectorAll('a[href^="tel:"], a[href^="mailto:"]').forEach(a =>
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.top.location.href = a.getAttribute('href');
+      }));
+  }
+
   /* nav scroll + mobile toggle (gallery pages) */
   const toggle = document.getElementById('navToggle');
   const mobile = document.getElementById('navMobile');

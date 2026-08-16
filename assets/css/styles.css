@@ -120,12 +120,12 @@ h1,h2,h3{font-weight:500;line-height:1.1}
 
 /* ---------- 4. reel ---------- */
 .reel{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(30px,6vw,90px);
-  padding:clamp(60px,9vw,120px) var(--gutter);background:var(--bg)}
+  padding:clamp(30px,4.5vw,60px) var(--gutter);background:var(--bg)}
 .reel__copy h2{font-family:var(--serif);font-size:clamp(1.8rem,3.4vw,2.8rem);margin:.2rem 0 1.2rem;font-weight:400}
 .reel__copy p{color:var(--muted);max-width:440px;margin-bottom:2rem}
 .reel__phone{display:flex;justify-content:center}
-.phone{position:relative;width:clamp(240px,26vw,300px);aspect-ratio:9/19.5;
-  background:#000;border-radius:42px;padding:11px;
+.phone{position:relative;width:clamp(200px,21vw,250px);aspect-ratio:9/19.5;
+  background:#000;border-radius:38px;padding:10px;
   box-shadow:0 0 0 2px #2a2a2e,0 40px 80px -30px rgba(0,0,0,.9);overflow:hidden}
 .phone__notch{position:absolute;top:16px;left:50%;transform:translateX(-50%);z-index:2;
   width:34%;height:22px;background:#000;border-radius:0 0 14px 14px}
@@ -377,8 +377,8 @@ h1,h2,h3{font-weight:500;line-height:1.1}
 /* mobile nav: Portfolio is a collapsible dropdown */
 .nav__mobile-label{display:flex;align-items:center;justify-content:space-between;width:100%;
   background:none;border:none;border-bottom:1px solid var(--line);cursor:pointer;text-align:left;
-  font-family:var(--sans);color:var(--muted);padding:16px 0 12px;font-size:.72rem;
-  letter-spacing:.2em;text-transform:uppercase}
+  font-family:var(--sans);font-weight:300;color:var(--ink);padding:14px 0;font-size:1rem;
+  letter-spacing:.1em;text-transform:uppercase}
 .nav__mobile-label .nav__caret{font-size:.9em;transition:transform .25s}
 .nav__mobile.show-portfolio .nav__mobile-label .nav__caret{transform:rotate(180deg)}
 .nav__mobile .nav__mobile-sub{display:none}
