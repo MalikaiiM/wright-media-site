@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- GitHub Pages serves this file at the requested path without redirecting, so relative
+     URLs would resolve against that path. Anchor everything to the site root instead.
+     WRIGHT-MEDIA-BASE — becomes "/" when the domain is repointed off the Pages subpath. -->
+<base href="/wright-media-site/" />
+<title>Page Not Found | Wright Media</title>
+<meta name="description" content="That page could not be found. Browse the Wright Media portfolio — residential, construction, Airbnb, and resort media across Palm Beach and South Florida." />
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css?v=4" />
+<link rel="stylesheet" href="assets/css/gallery.css?v=5" />
+<link rel="icon" href="assets/img/logo.png" />
+</head>
+<body class="gallery-page">
+
+<header class="nav is-scrolled" id="nav">
+  <a href="./" class="nav__brand">
+    <img src="assets/img/logo.png" alt="Wright Media" class="nav__logo" />
+    <span class="nav__name">WRIGHT MEDIA</span>
+  </a>
+  <nav class="nav__links">
+    <a href="./#hero">Home</a>
+    <div class="nav__drop">
+      <a href="residential" class="nav__drop-btn">Portfolio <span class="nav__caret" aria-hidden="true">&#9662;</span></a>
+      <div class="nav__menu">
+        <a href="residential">Residential</a>
+        <a href="construction">Construction</a>
+        <a href="airbnb">Airbnb</a>
+        <a href="resorts">Resorts</a>
+      </div>
+    </div>
+    <a href="./#about">About</a>
+  </nav>
+  <a href="./#contact" class="btn btn--pill nav__cta">Contact</a>
+  <button class="nav__toggle" aria-label="Menu" id="navToggle"><span></span><span></span><span></span></button>
+</header>
+<div class="nav__mobile" id="navMobile">
+  <a href="./#hero">Home</a>
+  <button class="nav__mobile-label" type="button">Portfolio <span class="nav__caret" aria-hidden="true">&#9662;</span></button>
+  <a href="residential" class="nav__mobile-sub">Residential</a>
+  <a href="construction" class="nav__mobile-sub">Construction</a>
+  <a href="airbnb" class="nav__mobile-sub">Airbnb</a>
+  <a href="resorts" class="nav__mobile-sub">Resorts</a>
+  <a href="./#about">About</a>
+  <a href="./#contact" class="btn btn--pill">Contact</a>
+</div>
+
+<section class="gallery-hero">
+  <p class="overline">404</p>
+  <h1>This page moved</h1>
+  <p class="gallery-hero__sub">The link you followed doesn't exist anymore — but the work is all still here. Pick a portfolio below, or reach out directly.</p>
+</section>
+
+<section class="carousel-section">
+  <!-- plain links, not a dropdown: this page's whole job is recovery, so the
+       destinations stay visible and need no JavaScript to reach -->
+  <div class="notfound__links">
+    <a class="btn btn--outline" href="residential">Residential</a>
+    <a class="btn btn--outline" href="construction">Construction</a>
+    <a class="btn btn--outline" href="airbnb">Airbnb</a>
+    <a class="btn btn--outline" href="resorts">Resorts</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__col footer__brand">
+    <img src="assets/img/logo.png" alt="Wright Media" class="footer__logo" />
+    <a href="tel:+15616762130">(561) 676-2130</a>
+    <a href="mailto:W@wrightmediaofficial.com">W@wrightmediaofficial.com</a>
+    <p class="footer__blessed">Have a blessed day.</p>
+  </div>
+  <div class="footer__col"><h3>Menu</h3>
+    <a href="./#hero">Home</a><a href="residential">Residential</a><a href="construction">Construction</a><a href="airbnb">Airbnb</a><a href="resorts">Resorts</a><a href="./#about">About</a><a href="./#contact">Contact</a>
+  </div>
+  <div class="footer__col"><h3>Areas We Cover</h3>
+    <span>Palm Beach</span><span>West Palm Beach</span><span>Delray Beach</span><span>Boca Raton</span><span>Jupiter</span><span>Wellington</span>
+  </div>
+  <div class="footer__col"><h3>Follow Us</h3>
+    <div class="footer__social"><a href="https://www.instagram.com/wrightmediaofficial/" target="_blank" rel="noopener" aria-label="Instagram">IG</a></div>
+    <p class="footer__copy">&copy; 2026 Wright Media. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/gallery.js?v=5"></script>
+</body>
+</html>

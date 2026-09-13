@@ -106,6 +106,7 @@
   const sources = tiles.map(t => t.getAttribute('href'));
   const box = document.getElementById('lightbox');
   const boxImg = document.getElementById('lightboxImg');
+  if (!box || !boxImg) return;   // 404.html reuses this script but has no lightbox
   let cur = 0;
 
   function open(i) {

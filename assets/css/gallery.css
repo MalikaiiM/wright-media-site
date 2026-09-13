@@ -86,3 +86,7 @@
 .gal-wrap{margin-top:clamp(28px,4vw,46px)}
 .gallery-hero__sub--wide{max-width:1100px}
 .gallery-page .gallery-hero{max-width:1200px}
+
+/* 404 recovery links */
+.notfound__links{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;
+  padding:0 var(--gutter) clamp(40px,6vw,80px)}
